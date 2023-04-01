@@ -9,38 +9,109 @@ html {
 }
 
 body {
-  margin: 2rem;
   font: 18px system-ui;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 1;
 }
 
-.section-cta {
+.cta-section {
   padding: 4.8rem 0 12.8rem;
 }
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
 
-/* .heading-primary {
-  font-size: 3rem;
-  font-weight: 700;
-  color: grey;
-  letter-spacing: -0.5px;
-  line-height: 1.05rem;
-  margin-bottom: 3rem;
-} */
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(153, 233, 209),
+    #271cc5
+  );
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta-heading {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(153, 233, 209, 0.35),
+      rgba(52, 42, 196, 0.35)
+    ),
+    url('');
+  background-size: cover;
+  background-position: center;
+}
 .cta-form {
-  width: 100%;
-  max-width: 32rem;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
 }
-.cta-details {
-  display: flex;
-  flex-wrap: wrap;
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
 }
 
-.name-text {
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-  color: red;
-  font-style: italic;
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e9fdf1;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.password-constraints {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(233, 253, 252, 0.5);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border-radius: 0.9rem;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
