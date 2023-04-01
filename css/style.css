@@ -55,7 +55,7 @@ body {
       rgba(153, 233, 209, 0.35),
       rgba(52, 42, 196, 0.35)
     ),
-    url('');
+    url('../img/hotel-2.jpg');
   background-size: cover;
   background-position: center;
 }
