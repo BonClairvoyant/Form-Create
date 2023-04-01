@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 2rem;
+  font: 18px system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+/* .heading-primary {
+  font-size: 3rem;
+  font-weight: 700;
+  color: grey;
+  letter-spacing: -0.5px;
+  line-height: 1.05rem;
+  margin-bottom: 3rem;
+} */
+.cta-form {
+  width: 100%;
+  max-width: 32rem;
+}
+.cta-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-text {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: red;
+  font-style: italic;
+}
